@@ -1,0 +1,43 @@
+
+@import './nav.css';
+@import './header.css';
+@import './decoration.css';
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Merriweather:ital,wght@1,900&family=Orbitron&family=Yeseva+One&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* font-family: 'Handlee', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Yeseva One', cursive; */
+:root{
+
+    --yellow:#fcde67;
+    --blue:#5bccf6;
+    --black:#030e12;
+    --white:#ffffff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Handlee', cursive;
+}
+
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+.hamburger > span:nth-child(1){
+    @apply rotate-45 dark:bg-white1;
+}
+.hamburger > span:nth-child(2){
+    @apply scale-0 dark:bg-white1;
+}
+.hamburger > span:nth-child(3){
+    @apply  -rotate-45 dark:bg-white1;
+}
+

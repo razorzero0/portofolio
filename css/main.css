@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Orbitron&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Orbitron&family=Yeseva+One&display=swap");
+#head {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+
+.head-1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.8em;
+  font-family: sans-serif;
+  display: block;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+.head-2 {
+  font-family: "sans-serif";
+}
+
+@media screen and (max-width: 600px) {
+  #head .head-3 {
+    width: 100px;
+    margin-top: -20px;
+  }
+  .head-1 {
+    -ms-writing-mode: lr-tb;
+        writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    display: none;
+  }
+}
+/* font-family: 'Handlee', cursive;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Yeseva One', cursive; */
+#nav {
+  padding: 10px;
+  display: flex;
+  font-size: large;
+  font-weight: 900;
+  font-family: "Orbitron", sans-serif;
+  justify-content: space-evenly;
+}
+#nav .btn {
+  letter-spacing: 4px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+  background-size: 300%;
+  transition: all 0.8s;
+  color: #030e12;
+  background-image: linear-gradient(160deg, #fcde67 50%, #030e12 50%);
+}
+#nav .btn:hover {
+  color: #fff;
+  background-position: 100%;
+  transform: translateX(0.5rem);
+}
+#nav #nav .btn:active {
+  transform: translate(0.5rem, 0.5rem);
+  box-shadow: 0px 10px 20px -15px rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: 600px) {
+  #nav {
+    flex-direction: column;
+  }
+  #nav a, #nav button {
+    transform: translateX(100%);
+  }
+  #nav::before {
+    content: "My Portofolio";
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 4px;
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+/* font-family: 'Handlee', cursive;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Yeseva One', cursive; */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fcde67;
+  height: 200vh;
+}/*# sourceMappingURL=main.css.map */

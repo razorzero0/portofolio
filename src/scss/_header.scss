@@ -1,0 +1,39 @@
+#head{
+    margin-top: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 3em;
+}
+
+.head-1 {
+    text-transform: uppercase;
+    font-weight:900 ;
+    font-size: 2.8em;
+font-family: sans-serif;
+    display: block;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+   
+}
+
+.head-2{
+    font-family: 'sans-serif';
+   
+}
+
+@media screen and (max-width: 600px) {
+    #head {
+    // flex-direction: column;
+    .head-3{
+        width: 100px;
+        margin-top: -20px;
+    }
+    }
+    
+.head-1 {
+   writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    display: none;
+  }
+}

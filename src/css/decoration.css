@@ -1,0 +1,25 @@
+
+#decor{
+    right: 0px;
+    top: 350px;
+   width: 200px;
+position: absolute;
+}
+/* @keyframes ok {
+    0%{
+    }
+    80%{
+        margin-left: 1150px;
+    }
+    100%{
+        margin-left: 1200px;
+    }
+} */
+@media screen and (max-width: 1000px) {
+    
+    
+#decor {
+    display: none;  
+}
+}
+
