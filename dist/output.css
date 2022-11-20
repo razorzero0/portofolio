@@ -771,6 +771,10 @@ video {
   height: 20rem;
 }
 
+.h-\[22rem\]{
+  height: 22rem;
+}
+
 .w-full{
   width: 100%;
 }
@@ -789,6 +793,14 @@ video {
 
 .w-80{
   width: 20rem;
+}
+
+.w-\[25rem\]{
+  width: 25rem;
+}
+
+.w-\[22rem\]{
+  width: 22rem;
 }
 
 .origin-top-left{
