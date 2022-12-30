@@ -1,9 +1,9 @@
 
 #decor{
     right: 0px;
-    top: 300px;
+    top: 240px;
    width: 200px;
-position: absolute;
+position: fixed;
 }
 /* @keyframes ok {
     0%{

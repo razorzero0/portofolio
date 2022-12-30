@@ -1,8 +1,10 @@
-gsap.from("#nav", { 
-    x: -200,
+setTimeout(() => {
+
+gsap.from("#logo-nav", { 
+    x: -400,
     // yPercent: 50 ,
     // rotation: 360,
-  duration: 2,
+  duration: 1,
   // backgroundColor: '#8d3dae',
   // repeat: 2, 
   // yoyo: true,
@@ -30,4 +32,5 @@ gsap.from("#a-head2", {
   opacity: 0.5, 
   });
 
+},1000)
   

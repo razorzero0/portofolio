@@ -6,13 +6,22 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../dist/output.css" rel="stylesheet">
-   
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
 </head>
 <body class="bg-yellow1 dark:bg-black">
-<div class="">
-    <section id="navbar" class="flex justify-around dark:bg-black1 items-center h-16 w-full">
-        <div class="dark:text-white1 tracking-wide text-xl font-black xl:-ml-12">
+    <div id="splash-screen">
+        <svg class="loader" width="100px" height="77px" viewBox="0 0 100 77">
+          <rect x="0" fill="#0975b5"></rect>
+          <rect x="21" fill="#709921"></rect>
+          <rect x="42" fill="#f7b531"></rect>
+          <rect x="63" fill="#2ea1c0"></rect>
+          <rect x="84" fill="#fc5f56"></rect>
+        </svg>
+      </div>
+<div class="main-container hidden  " >
+    <section id="navbar" class="fixed top-0 left-0 flex justify-around bg-yellow2 dark:bg-black1 items-center h-16 w-full">
+        <div id="logo-nav" class="dark:text-white1 tracking-wide text-xl font-black xl:-ml-12">
 <h4>My Portofolio</h4>
         </div>
 
@@ -42,25 +51,26 @@
             <span class="w-9 h-1 origin-bottom-left bg-black rounded-xl transition duration-500 ease-in-out dark:bg-white1"></span>
         </div>
         </button>
-            <div class="nav absolute -top-28 -right-28 xl:-ml-32
-          xl:-mt-3 bg-yellow2 xl:bg-yellow1 w-[22rem] h-[22rem] rounded-full   dark:bg-opacity-0 ">
-                <ul class="flex   flex-col gap-2 xl:gap-8 xl:flex-row xl:items-center mt-36 ml-24 xl:-ml-40 dark:bg-black1 dark:pl-4 rounded-lg">
-                    <li class=" mt-5 xl:mt-0 dark:mt-10 dark:xl:mt-0 dark:text-white1 "><a href="#" class="text-xl font-bold hover:underline">Home</a></li>
-                    <li ><a href="#" class="text-xl font-bold dark:text-white1">Project</a></li>
-                    <li><a href="#" class="text-xl font-bold dark:text-white1">Experience</a></li>
-                    <li><a href="#" class="text-xl font-bold dark:text-white1">About</a></li>
+            <div class="nav origin-center absolute -top-28 -right-28 xl:-ml-24
+          xl:-mt-3 bg-yellow2  w-[22rem] h-[22rem] xl:h-0 rounded-full xl:rounded-none   dark:bg-black1 ">
+                <ul class="flex   flex-col gap-2 xl:gap-12 xl:flex-row xl:items-center mt-36 ml-24 xl:-ml-40 dark:bg-black1  rounded-lg">
+                    <li></li>
+                    <li class=" mt-8 xl:mt-0 dark:mt-8 dark:xl:mt-0 dark:text-white1 "><a href="#head" class="text-xl font-bold hover:underline">Home</a></li>
+                    <li ><a href="#skill" class="text-xl font-bold dark:text-white1">My Skill</a></li>
+                    <li><a href="#project" class="text-xl font-bold dark:text-white1">Project</a></li>
+                   
                 </ul>
             </div>
     </div>
     </section>
 
-    <section id="head">
-    <div class="head-1 ml-8 dark:text-white1 dark:bg-black">
+    <section id="head" class="mb-20 pt-10 ">
+    <div class="head-1 xl:ml-24 dark:text-white1 dark:bg-black">
         <h1 id="a-head1"> Portofolio</h1> 
         <h1 id="a-head2"> My</h1> 
     </div>
     
-    <div class="head-2 font-bold dark:text-white1 dark:bg-black -z-1" >
+    <div class="head-2 font-bold dark:text-white1  dark:bg-black -z-1 text-center" >
         <h1 class="text-lg text-white1 dark:text-white"> Alooha..👋 My Name Is &nbsp;</h1> 
         <h1 class="text-2xl "> Muh. Ainun Yanuarsyam &nbsp;</h1> 
         <h1>I'm a <span id="typed"></span> </h1>
@@ -73,29 +83,226 @@
       </svg>Linkedin</a>
 </div>
     </div>
-    <div class="head-3 w-80 -ml-12 -mb-10 -z-[99]" >
+    <div class="head-3 w-80 xl:-ml-12  -z-[99]" >
  
        <img src="../img/sit.png"  />
         
     </div>
     </section>
+<section id="skill" class="w-[80%]  xl:w-[55%] dark:text-white1 " >
+    <div class=" text-center  mb-5 left-[50%]  " data-aos="fade-down" data-aos-easing="linear">
+        <span class="text-2xl font-bold" >My Skills</span>
+    </div> 
+    <div>
+<ul class="tabs inline-flex w-full px-1 pt-2  justify-around" 
+      data-content="tab-content">
+	    <li class="px-4 w-24 py-2  mr-8 font-semibold text-gray-800 border-b-2 border-blue-400 rounded-t opacity-50">
+		    <a class="default-tab" href="#ex1-tab1">FrontEnd</a>
+	    </li>
+ 	    <li class="px-4 py-2 w-24  mr-8  font-semibold text-gray-800 border-b-2 border-blue-400 rounded-t opacity-50">
+		    <a href="#ex1-tab2">BackEnd</a>
+	    </li>
+ 	    <li class="px-4 py-2 w-24   font-semibold text-gray-800 border-b-2 border-blue-400 rounded-t opacity-50">
+		    <a href="#ex1-tab3">Others</a>
+	    </li>
+	</ul>
 
 
-<div id="decor">
+<div class="tabs-contents py-4 flex gap-4  justify-center" id="tab-content">
+      <div id="ex1-tab1" class="xl:w-full " >
+        <div  class=" flex gap-4  flex-wrap justify-center">
+            <!-- <div class="flex items-center  flex-col gap-4  ">
+                <div class="icon w-36 h-28 xl:w-40 xl:h-32 bg-white1 rounded-lg">
+                    <img src="../img/html.png" class="w-full p-1 h-full"/>
+                </div>
+                <span>HTML 5</span>
+            </div> -->
+            
+            <div class="flex items-center  flex-col gap-4" data-aos="fade-right">
+                <div class="icon w-36 h-28 xl:w-40 xl:h-32 bg-white1 rounded-lg">
+                    <img src="../img/css.jpeg" class="ml-6 p-1 h-full"/>
+                </div>
+                <span>CSS 3</span>
+            </div>
+            
+            <div class="flex  flex-col items-center gap-4" data-aos="fade-right">
+                <div class="icon w-36 h-28 xl:w-40 xl:h-32 bg-white1 rounded-lg">
+                    <img src="../img/b.png" class="w-full p-1 h-full"/>
+                </div>
+                <span>Bootstrap 5</span>
+            </div>
+            <div class="flex items-center gap-4  flex-col" data-aos="fade-left" >
+                <div class="icon w-36 h-28 xl:w-40 xl:h-32 bg-white1  rounded-lg">
+                    <img src="../img/tailwind.png" class="w-full p-1 h-full"/>
+                </div>
+                <span>Tailwind CSS</span>
+            </div>
+            
+            <div class="flex items-center gap-4  flex-col" data-aos="fade-left">
+                <div class="icon w-36 h-28 xl:w-40 xl:h-32 bg-white1 rounded-lg">
+                    <img src="../img/sass.png" class="w-full p-1 h-full"/>
+                </div>
+                <span>SASS</span>
+            </div>
+            
+            <div class="flex items-center gap-4  flex-col" data-aos="fade-right">
+                <div class="icon w-36 h-28 xl:w-40 xl:h-32 bg-white1 rounded-lg">
+                    <img src="../img/cakra.webp" class="w-full p-1 h-full"/>
+                </div>
+                <span>Cakra UI</span>
+            </div>
+            
+            <div class="flex items-center gap-4  flex-col" data-aos="fade-left">
+                <div class="icon w-36 h-28 xl:w-40 xl:h-32 bg-white1 rounded-lg ">
+                    <img src="../img/react.png" class="p-1 mt-8 "/>
+                </div>
+                <span>React js</span>
+            </div>
+        </div>
+       </div>
+      <div id="ex1-tab2"  >
+        <div  class=" flex gap-4  flex-wrap justify-center" >
+            <div class="flex flex-col items-center gap-4" data-aos="fade-right">
+                <div class="icon w-36 h-28 xl:w-40 xl:h-32 bg-white1 rounded-lg">
+                    <img src="../img/php.png" class="w-full p-1 h-full"/>
+                </div>
+                <span>PHP</span>
+            </div>
+            
+            <div class="flex flex-col items-center gap-4" data-aos="fade-up">
+                <div class="icon w-36 h-28 xl:w-40 xl:h-32 bg-white1 rounded-lg">
+                    <img src="../img/l.png" class="w-full p-1 h-full"/>
+                </div>
+                <span>Laravel</span>
+            </div>
+            
+            <div class="flex flex-col items-center gap-4" data-aos="fade-left">
+                <div class="icon w-36 h-28 xl:w-40 xl:h-32 bg-white1 rounded-lg">
+                    <img src="../img/mysql.png" class="w-full p-1 h-full"/>
+                </div>
+                <span>Mysql</span>
+            </div>
+            
+            
+        </div>
+       </div>
+      <div id="ex1-tab3" >
+        <div  class=" flex gap-4  flex-wrap justify-center">
+            <div class="flex flex-col items-center gap-4" data-aos="right">
+                <div class="icon w-36 h-28 xl:w-40 xl:h-32 bg-white1 rounded-lg">
+                    <img src="../img/git.png" class="w-full p-1 h-full"/>
+                </div>
+                <span>Github</span>
+            </div>
+            
+            <div class="flex flex-col items-center gap-4" data-aos="fade-up">
+                <div class="icon w-36 h-28 xl:w-40 xl:h-32 bg-white1 rounded-lg">
+                    <img src="../img/post.png" class="w-full p-1 h-full"/>
+                </div>
+                <span>Postman</span>
+            </div>
+            
+            <div class="flex flex-col items-center gap-4" data-aos="fade-left">
+                <div class="icon w-36 h-28 xl:w-40 xl:h-32 bg-white1 rounded-lg">
+                    <img src="../img/webpack.png" class="w-full p-1 mt-8"/>
+                </div>
+                <span>Webpack</span>
+            </div>
+        </div>
+       </div>
+</div>
+
+    </div>
+</section>
+<section id="project" class="my-8  flex justify-center " >
+    <div class="text-center w-80 xl:w-[55%] dark:text-white1">
+        <div class="border-b-2  text-center  mb-5 left-[50%]  " data-aos="fade-right"
+        
+      >
+            <span class="text-2xl font-bold" >My Project</span>
+        </div> 
+    <div id="img-project" class="flex flex-col items-center xl:flex-row gap-5 justify-center w-full">
+        <div class="img-overlay w-[21rem] h-60   hover:transition-all duration-700 ease-in-out   rounded-lg shadow-lg" data-aos="zoom-in-down">
+        <img src="../img/porto.webp" class="w-full"/>
+        <div class="overlay">
+            <a href="#" class="text">Hello World</a>
+          </div>
+         </div>
+         <div class="img-overlay w-[21rem] h-60   hover:transition-all duration-700 ease-in-out   rounded-lg shadow-lg" data-aos="zoom-in-down">
+            <img src="../img/porto.webp" class="w-full"/>
+            <div class="overlay">
+                <a href="#" class="text">Hello World</a>
+              </div>
+             </div>
+    </div> 
+    <div id="img-project" class="mt-5 flex flex-col items-center xl:flex-row gap-5 justify-center w-full">
+        <div class="img-overlay w-[21rem] h-60   hover:transition-all duration-700 ease-in-out   rounded-lg shadow-lg" data-aos="zoom-in-down">
+            <img src="../img/porto.webp" class="w-full"/>
+            <div class="overlay">
+                <a href="#" class="text">Hello World</a>
+              </div>
+             </div>
+             <div class="img-overlay w-[21rem] h-60   hover:transition-all duration-700 ease-in-out   rounded-lg shadow-lg" data-aos="zoom-in-down">
+                <img src="../img/porto.webp" class="w-full"/>
+                <div class="overlay">
+                    <a href="#" class="text">Hello World</a>
+                  </div>
+                 </div>
+    </div> 
+</div>  
+</section>
+
+<footer class="footer bg-yellow2 dark:bg-black1 flex justify-center items-center h-40" >
+<div class="xl:ml-8">
+	<ul class="menu text-black flex gap-12 mb-8">
+		<li class="menu__item"><a class="hover:text-white1 text-black dark:text-white1 font-bold" href="#head">Home</a></li>
+		<li class="menu__item"><a class="hover:text-white1 text-black dark:text-white1 font-bold" href="#">About me</a></li>
+		<li class="menu__item"><a class="hover:text-white1 text-black dark:text-white1 font-bold" href="#">Contact me</a></li>
+	</ul>
+	<p style="opacity: 0.75;" class="text-center text-black dark:text-white1 font-bold
+    ">Made with 🤍 by Yayan </p>
+</div>
+</footer>
+
+
+<!-- <div id="decor">
     <img src="../img/duck1.gif"/>
-</div>
+</div> -->
+
+    <a href="#head" class="w-14 h-14 rounded-full fixed bottom-4 right-4 bg-black1  justify-center items-center hover:animate-pulse pt-2 hidden" id="to-top">
+        <span class=" block h-5 w-5 border-white1 border-t-4 border-l-4 rotate-45 "></span>
+    </a>
 
 </div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
     <script src="js/minified/gsap.min.js"></script>
     <script  src="js/script.js"></script>
     <script src="js/gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
    <script>
+
+
+
+
+
     new Typed('#typed',{
 strings : ['Fullstack Progammer^1500'],
 typeSpeed : 100,
 loop : true
 });
+
+
+
+const main = document.querySelector('.main-container'); 
+const splash = document.querySelector('#splash-screen');
+setTimeout(()=>{
+  console.log("a")
+main.style.display = "block"
+splash.style.display = "none"
+},1000)
 </script>
 </body>
 </html>

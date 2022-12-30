@@ -1,9 +1,10 @@
 
 @keyframes fade {
-  10%{
-    opacity: 0;
+  0%{
+    transform: translateX(100px);
+    opacity: 0.1;
   }
-  10%{
+  50%{
     opacity: 0.6;
   }
   100%{
@@ -11,10 +12,17 @@
   }
 }
 
-#nav{
+.fixednav{
+  @apply z-[9999] opacity-90 fixed top-0  shadow-md  bg-yellow2;
+   backdrop-filter:blur(5px);
+
+}
+
+.nav{
 
     font-family: 'Orbitron', sans-serif;
-    animation: fade 2s ease-in-out;   
+    animation: fade .7s ease-in-out ;  
+    transition: all; 
     
 }    
 .btn{

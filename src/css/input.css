@@ -1,7 +1,10 @@
 
+@import './footer.css';
+@import './splash.css';
 @import './nav.css';
 @import './header.css';
 @import './decoration.css';
+@import './sertifikat.css';
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Merriweather:ital,wght@1,900&family=Orbitron&family=Yeseva+One&display=swap');
 @tailwind base;
 @tailwind components;
@@ -13,9 +16,14 @@ font-family: 'Yeseva One', cursive; */
 :root{
 
     --yellow:#fcde67;
+    --yellow1:#f1b92b;
     --blue:#5bccf6;
     --black:#030e12;
     --white:#ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 *{
@@ -41,3 +49,21 @@ body{
     @apply  -rotate-45 dark:bg-white1;
 }
 
+
+
+#skill{
+    margin: 0 auto;
+}
+
+li a{
+  @apply hover:text-white1 dark:hover:text-black
+}
+
+.icon{
+  @apply shadow-md hover:scale-110 transition-all duration-300 ease-in-out
+}
+
+
+
+
+  
