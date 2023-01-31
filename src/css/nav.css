@@ -21,7 +21,7 @@
 .nav{
 
     font-family: 'Orbitron', sans-serif;
-    animation: fade .7s ease-in-out ;  
+    animation: fade .7s ease-in-out alternate both;  
     transition: all; 
     
 }    

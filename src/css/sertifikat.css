@@ -24,7 +24,7 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.6);
   }
   
  
@@ -32,13 +32,29 @@
     opacity: 1;
   }
   
-  .text {
+  .text-header{
     color: white;
     font-size: 20px;
     position: absolute;
-    top: 50%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
+    width: 100%;
+    font-family: sans-serif;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    /* text-decoration: underline; */
+    color: yellow;
   }
