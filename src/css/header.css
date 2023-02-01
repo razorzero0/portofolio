@@ -24,18 +24,3 @@ gap: 3em;
    
 }
 
-@media screen and (max-width: 600px) {
-    #head {
-     flex-direction: column;
-    }
-    .head-3{
-        width: 100px;
-        margin-top: -20px;
-    }
-    
-.head-1 {
-   writing-mode: horizontal-tb;
-    transform: rotate(0deg);
-    display: none;
-  }
-}

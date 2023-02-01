@@ -18,6 +18,7 @@ gsap.from("#logo-nav", {
   // ease: "elastic", 
   // force3D: true
   });
+  
 gsap.from("#a-head1", { 
     x: 800,
   duration: 2,

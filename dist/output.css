@@ -271,23 +271,6 @@
   letter-spacing: 2px;
 }
 
-@media screen and (max-width: 600px) {
-  #head {
-    flex-direction: column;
-  }
-
-  .head-3{
-    width: 100px;
-    margin-top: -20px;
-  }
-
-  .head-1 {
-    writing-mode: horizontal-tb;
-    transform: rotate(0deg);
-    display: none;
-  }
-}
-
 #decor{
   right: 0px;
   top: 240px;
@@ -960,10 +943,6 @@ video {
   z-index: -99;
 }
 
-.z-\[9999\]{
-  z-index: 9999;
-}
-
 .m-2{
   margin: 0.5rem;
 }
@@ -1028,22 +1007,6 @@ video {
 
 .mb-8{
   margin-bottom: 2rem;
-}
-
-.ml-60{
-  margin-left: 15rem;
-}
-
-.ml-12{
-  margin-left: 3rem;
-}
-
-.ml-20{
-  margin-left: 5rem;
-}
-
-.-mr-20{
-  margin-right: -5rem;
 }
 
 .block{
@@ -1615,13 +1578,23 @@ li a:hover{
   color: rgb(248 248 248 / var(--tw-text-opacity));
 }
 
-@media (min-width: 1280px){
-  .xl\:z-10{
-    z-index: 10;
+@media (min-width: 768px){
+  .md\:block{
+    display: block;
   }
 
+  .md\:flex-row{
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1280px){
   .xl\:z-\[9999\]{
     z-index: 9999;
+  }
+
+  .xl\:z-10{
+    z-index: 10;
   }
 
   .xl\:-ml-12{
@@ -1648,36 +1621,16 @@ li a:hover{
     margin-left: 6rem;
   }
 
-  .xl\:-ml-16{
-    margin-left: -4rem;
-  }
-
-  .xl\:ml-8{
-    margin-left: 2rem;
-  }
-
-  .xl\:-mr-20{
-    margin-right: -5rem;
-  }
-
   .xl\:-mr-24{
     margin-right: -6rem;
   }
 
-  .xl\:-ml-20{
-    margin-left: -5rem;
-  }
-
-  .xl\:ml-20{
-    margin-left: 5rem;
-  }
-
-  .xl\:-ml-10{
-    margin-left: -2.5rem;
-  }
-
   .xl\:-ml-8{
     margin-left: -2rem;
+  }
+
+  .xl\:ml-8{
+    margin-left: 2rem;
   }
 
   .xl\:hidden{
