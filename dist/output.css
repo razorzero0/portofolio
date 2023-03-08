@@ -973,10 +973,6 @@ video {
   margin-top: 2.5rem;
 }
 
-.mb-20{
-  margin-bottom: 5rem;
-}
-
 .mt-8{
   margin-top: 2rem;
 }
@@ -1308,16 +1304,20 @@ video {
   padding-top: 2.5rem;
 }
 
+.pt-28{
+  padding-top: 7rem;
+}
+
 .pt-2{
   padding-top: 0.5rem;
 }
 
-.pt-20{
-  padding-top: 5rem;
+.pt-24{
+  padding-top: 6rem;
 }
 
-.pt-80{
-  padding-top: 20rem;
+.pt-20{
+  padding-top: 5rem;
 }
 
 .text-center{
