@@ -1,11 +1,10 @@
-
-@import './footer.css';
-@import './splash.css';
-@import './nav.css';
-@import './header.css';
-@import './decoration.css';
-@import './sertifikat.css';
-@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Merriweather:ital,wght@1,900&family=Orbitron&family=Yeseva+One&display=swap');
+@import "./footer.css";
+@import "./splash.css";
+@import "./nav.css";
+@import "./header.css";
+@import "./decoration.css";
+@import "./sertifikat.css";
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Merriweather:ital,wght@1,900&family=Orbitron&family=Yeseva+One&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,58 +12,48 @@
 font-family: 'Merriweather', serif;
 font-family: 'Orbitron', sans-serif;
 font-family: 'Yeseva One', cursive; */
-:root{
-
-    --yellow:#fcde67;
-    --yellow1:#f1b92b;
-    --blue:#5bccf6;
-    --black:#030e12;
-    --white:#ffffff;
+:root {
+  --yellow: #fcde67;
+  --yellow1: #f1b92b;
+  --blue: #5bccf6;
+  --black: #030e12;
+  --white: #ffffff;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Handlee', cursive;
-    text-decoration: none;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Handlee", cursive;
+  text-decoration: none;
 }
 
-
-body{
-    overflow-x: hidden;
+body,
+html {
+  overflow-x: hidden;
 }
 
-
-
-.hamburger > span:nth-child(1){
-    @apply rotate-45 dark:bg-white1;
+.hamburger > span:nth-child(1) {
+  @apply rotate-45 dark:bg-white1;
 }
-.hamburger > span:nth-child(2){
-    @apply scale-0 dark:bg-white1;
+.hamburger > span:nth-child(2) {
+  @apply scale-0 dark:bg-white1;
 }
-.hamburger > span:nth-child(3){
-    @apply  -rotate-45 dark:bg-white1;
+.hamburger > span:nth-child(3) {
+  @apply -rotate-45 dark:bg-white1;
 }
 
-
-
-#skill{
-    margin: 0 auto;
+#skill {
+  margin: 0 auto;
 }
 
-li a{
-  @apply hover:text-white1 dark:hover:text-black
+li a {
+  @apply hover:text-white1 dark:hover:text-black;
 }
 
-.icon{
-  @apply shadow-md hover:scale-110 transition-all duration-300 ease-in-out
+.icon {
+  @apply shadow-md hover:scale-110 transition-all duration-300 ease-in-out;
 }
-
-
-
-
-  

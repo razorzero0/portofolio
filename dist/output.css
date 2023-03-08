@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Merriweather:ital,wght@1,900&family=Orbitron&family=Yeseva+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Merriweather:ital,wght@1,900&family=Orbitron&family=Yeseva+One&display=swap");
 
 /* 
 .footer {
@@ -1312,6 +1312,14 @@ video {
   padding-top: 0.5rem;
 }
 
+.pt-20{
+  padding-top: 5rem;
+}
+
+.pt-80{
+  padding-top: 20rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1432,26 +1440,27 @@ font-family: 'Merriweather', serif;
 font-family: 'Orbitron', sans-serif;
 font-family: 'Yeseva One', cursive; */
 
-:root{
-  --yellow:#fcde67;
-  --yellow1:#f1b92b;
-  --blue:#5bccf6;
-  --black:#030e12;
-  --white:#ffffff;
+:root {
+  --yellow: #fcde67;
+  --yellow1: #f1b92b;
+  --blue: #5bccf6;
+  --black: #030e12;
+  --white: #ffffff;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
-  font-family: 'Handlee', cursive;
+  font-family: "Handlee", cursive;
   text-decoration: none;
 }
 
-body{
+body,
+html {
   overflow-x: hidden;
 }
 
@@ -1483,7 +1492,7 @@ body{
   background-color: #ffff;
 }
 
-#skill{
+#skill {
   margin: 0 auto;
 }
 
@@ -1578,19 +1587,9 @@ li a:hover{
   color: rgb(248 248 248 / var(--tw-text-opacity));
 }
 
-@media (min-width: 640px){
-  .sm\:hidden{
-    display: none;
-  }
-}
-
 @media (min-width: 768px){
   .md\:block{
     display: block;
-  }
-
-  .md\:hidden{
-    display: none;
   }
 
   .md\:flex-row{
@@ -1691,8 +1690,3 @@ li a:hover{
     margin-top: 0px;
   }
 }
-
-
-
-
-  
