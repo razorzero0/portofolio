@@ -70,3 +70,32 @@ function hamburger() {
     tab.querySelectorAll(".default-tab")[0].click();
   });
 })();
+
+const sendMail = () => {
+  var params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+  const serviceId = "service_g5ajbk7";
+  const template = "template_4bzfdgh";
+
+  emailjs
+    .send(serviceId, template, params)
+    .then(() => {
+      document.getElementById("name").value = "";
+      (document.getElementById("email").value = ""),
+        (document.getElementById("message").value = "");
+      Swal.fire({
+        title: "Terima Kasih!",
+        text: "Pesan Berhasil Terkirim",
+        imageUrl: "../../img/thank.gif",
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: "thank yoou",
+      });
+    })
+    .catch(() => {
+      alert("pesan gagal dikirimkan");
+    });
+};
